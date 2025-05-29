@@ -1,9 +1,19 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:APxCommander3.GUI.ViewModels"
+        mc:Ignorable="d"
         x:Class="APxCommander3.GUI.MainWindow"
         Title="APxCommander3 GUI" Width="800" Height="600">
-    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-        <TextBlock Text="APxCommander3 GUI Ready" />
-        <TextBlock Text="nest steps ..." />
+
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <StackPanel Margin="20">
+        <TextBlock Text="APxCommander3 GUI Ready" Margin="0,0,0,10"/>
+        <Button Content="Messung starten"
+                Command="{Binding StartMeasurementCommand}" Width="200" Height="40"/>
     </StackPanel>
 </Window>

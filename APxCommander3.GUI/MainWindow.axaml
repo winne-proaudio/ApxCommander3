@@ -1,0 +1,9 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="APxCommander3.GUI.MainWindow"
+        Title="APxCommander3 GUI" Width="800" Height="600">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="APxCommander3 GUI Ready" />
+        <TextBlock Text="nest steps ..." />
+    </StackPanel>
+</Window>

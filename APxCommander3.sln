@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APxCommander3.Backend", "APxCommander3.Backend\APxCommander3.Backend.csproj", "{A7144575-5F7E-4171-A237-FEB026B1A2B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APxCommander3.GUI", "APxCommander3.GUI\APxCommander3.GUI.csproj", "{0B049F4B-66A2-4186-9DDC-3B328A8EC434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APxCommander3.Shared", "APxCommander3.Shared\APxCommander3.Shared.csproj", "{A95776B4-78B1-4D97-82E2-35273E71BBB5}"
+EndProject
+Global
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7144575-5F7E-4171-A237-FEB026B1A2B5}.X64|Any CPU.ActiveCfg = X64|Any CPU
+		{A7144575-5F7E-4171-A237-FEB026B1A2B5}.X64|Any CPU.Build.0 = X64|Any CPU
+		{0B049F4B-66A2-4186-9DDC-3B328A8EC434}.X64|Any CPU.ActiveCfg = X64|Any CPU
+		{0B049F4B-66A2-4186-9DDC-3B328A8EC434}.X64|Any CPU.Build.0 = X64|Any CPU
+		{A95776B4-78B1-4D97-82E2-35273E71BBB5}.X64|Any CPU.ActiveCfg = X64|Any CPU
+		{A95776B4-78B1-4D97-82E2-35273E71BBB5}.X64|Any CPU.Build.0 = X64|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		X64|Any CPU = X64|Any CPU
+	EndGlobalSection
+EndGlobal

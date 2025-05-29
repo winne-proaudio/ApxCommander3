@@ -10,15 +10,22 @@ namespace APxCommander3.Backend.Api
         [Route("")]
         public IHttpActionResult PostCommand(CommandRequest request)
         {
-            StatusPushService.SendToAll(new StatusUpdate
+            WebSocketHost.PushStatus(new StatusUpdate
             {
                 Type = "Progress",
                 Message = "Messung gestartet...",
                 ProgressPercent = 0,
-                CurrentStep = "Initialisierung"
+                CurrentStep = request.Action
             });
 
             return Ok(new { status = "started", step = request.Action });
+        }
+
+        [HttpGet]
+        [Route("~/api/health")]
+        public IHttpActionResult GetHealth()
+        {
+            return Ok("OK");
         }
     }
 }

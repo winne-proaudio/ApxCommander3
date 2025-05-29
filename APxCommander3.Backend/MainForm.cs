@@ -6,7 +6,7 @@ namespace APxCommander3.Backend
     {
         public MainForm()
         {
-            Text = "APxCommander3 Backend";
+            Text = "APxCommander3 Backend Host läuft...";
         }
     }
 }

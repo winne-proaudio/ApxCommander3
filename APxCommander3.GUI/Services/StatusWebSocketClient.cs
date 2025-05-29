@@ -17,7 +17,7 @@ namespace APxCommander3.GUI.Services
         public async Task ConnectAsync()
         {
             _webSocket = new ClientWebSocket();
-            await _webSocket.ConnectAsync(new Uri("ws://localhost:5000/ws/status"), CancellationToken.None);
+            await _webSocket.ConnectAsync(new Uri("ws://localhost:5001"), CancellationToken.None);
             _ = ReceiveLoop();
         }
 

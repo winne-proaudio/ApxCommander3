@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,10 @@ namespace APxCommander3.GUI.Services
         {
             var json = JsonConvert.SerializeObject(command);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-            await Client.PostAsync("http://localhost:5000/api/command", content);
+            var response = await Client.PostAsync("http://localhost:5000/api/command", content);
+
+            string responseContent = await response.Content.ReadAsStringAsync();
+            Console.WriteLine($"[REST] Antwort vom Server: {response.StatusCode} - {responseContent}");
         }
     }
 }
